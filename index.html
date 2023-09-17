@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class = "container">
+<form action="">
+<h1 class ="main">Payment Form</h1>
+<div class = "user-data">
+    <h2>User information</h2>
+        <p>Name:*<input type="text" placeholder="enter name"></p>
+    <fieldset>
+        <legend>Gender</legend>
+        <p>
+            Male<input type="radio" name="gender" id="male" required>
+            Female<input type="radio" name="gender" id="female" required>
+        </p>
+    </fieldset>
+    <p>Address:* <textarea name="addres" id="address" cols="200" rows="5" placeholder="Enter the address"></textarea></p>
+    <p>Email:* <input type="email" name="email" id="email" required placeholder="name@daomain.com"></p>
+    <p>Pincode:* <input type="number" name="number" id="number" required></p> 
+   
+</div>
+<hr>
+<div class="Payment_info">
+<h2>Payment information</h2>
+<p>Card Type:*
+    <select name="Card type" id="card_type" required>
+        <option value="">--selec a card--</option>
+        <option value="visa"> Visa</option>
+        <option value="rupay">rupay</option>
+        <option value="canara">canara</option>
+    </select>
+</p>
+    <p>Card number:* <input type="number" required placeholder="####-####-####"></p>
+    <p>Expiry date:* <input type="date" name="crd_exp" id="crd_exp" required></p>
+    <p>CVV:* <input type="password" name="cvv" id="cvv" required placeholder="123"></p>
+    <input type="submit" value="Pay now">
+</div>
+</form>
+</div>
+</body>
+</html>
